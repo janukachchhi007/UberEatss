@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C5117E2327BB579B31E6386 /* Pods_UberEats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41630AEDADCA9FE91892411C /* Pods_UberEats.framework */; };
+		A297977F2A7F7DEF005C6294 /* loactionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A297977E2A7F7DEF005C6294 /* loactionPage.swift */; };
+		A29797832A7F8643005C6294 /* addressPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29797822A7F8643005C6294 /* addressPage.swift */; };
+		A29797852A7F9071005C6294 /* allowPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29797842A7F9071005C6294 /* allowPage.swift */; };
+		A29797872A7F9F47005C6294 /* ShareLocationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29797862A7F9F47005C6294 /* ShareLocationPage.swift */; };
+		A2B17C1E2A7E329900C3D30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C1D2A7E329900C3D30A /* AppDelegate.swift */; };
+		A2B17C202A7E329900C3D30A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C1F2A7E329900C3D30A /* SceneDelegate.swift */; };
+		A2B17C252A7E329900C3D30A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B17C232A7E329900C3D30A /* Main.storyboard */; };
+		A2B17C282A7E329900C3D30A /* UberEats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C262A7E329900C3D30A /* UberEats.xcdatamodeld */; };
+		A2B17C2A2A7E329A00C3D30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B17C292A7E329A00C3D30A /* Assets.xcassets */; };
+		A2B17C2D2A7E329A00C3D30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B17C2B2A7E329A00C3D30A /* LaunchScreen.storyboard */; };
+		A2B17C352A7E34E300C3D30A /* EmailContinuePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C342A7E34E300C3D30A /* EmailContinuePage.swift */; };
+		A2B17C372A7E34F300C3D30A /* continueWithApplePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C362A7E34F300C3D30A /* continueWithApplePage.swift */; };
+		A2B17C392A7E351E00C3D30A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C382A7E351E00C3D30A /* ViewController.swift */; };
+		A2B17C3B2A7E352800C3D30A /* logInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C3A2A7E352800C3D30A /* logInPage.swift */; };
+		A2B17C3D2A7E371800C3D30A /* InformationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C3C2A7E371800C3D30A /* InformationPage.swift */; };
+		A2B17C3F2A7E372400C3D30A /* EmailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C3E2A7E372400C3D30A /* EmailPage.swift */; };
+		A2B17C412A7E373700C3D30A /* GooglePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C402A7E373700C3D30A /* GooglePage.swift */; };
+		A2B17C432A7E375600C3D30A /* accountCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C422A7E375600C3D30A /* accountCollectionView.swift */; };
+		A2B17C452A7E377100C3D30A /* ContinuePasscodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C442A7E377100C3D30A /* ContinuePasscodePage.swift */; };
+		A2B17C472A7E3BBB00C3D30A /* SelectPayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C462A7E3BBB00C3D30A /* SelectPayMode.swift */; };
+		A2B17C492A7E3BC000C3D30A /* CreditCardpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C482A7E3BC000C3D30A /* CreditCardpage.swift */; };
+		A2B17C4B2A7E3BCB00C3D30A /* EditAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C4A2A7E3BCB00C3D30A /* EditAccessPage.swift */; };
+		A2B17C4D2A7E3BD300C3D30A /* ContinueWithFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C4C2A7E3BD300C3D30A /* ContinueWithFacebook.swift */; };
+		A2B17C4F2A7E3E9000C3D30A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B17C4E2A7E3E9000C3D30A /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14BEE301B911BF3772B132A5 /* Pods-UberEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.release.xcconfig"; path = "Target Support Files/Pods-UberEats/Pods-UberEats.release.xcconfig"; sourceTree = "<group>"; };
+		20BD7CD48B67DEF653FF604B /* Pods-UberEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.debug.xcconfig"; path = "Target Support Files/Pods-UberEats/Pods-UberEats.debug.xcconfig"; sourceTree = "<group>"; };
+		41630AEDADCA9FE91892411C /* Pods_UberEats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberEats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A297977E2A7F7DEF005C6294 /* loactionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loactionPage.swift; sourceTree = "<group>"; };
+		A29797822A7F8643005C6294 /* addressPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressPage.swift; sourceTree = "<group>"; };
+		A29797842A7F9071005C6294 /* allowPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allowPage.swift; sourceTree = "<group>"; };
+		A29797862A7F9F47005C6294 /* ShareLocationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLocationPage.swift; sourceTree = "<group>"; };
+		A2B17C1A2A7E329900C3D30A /* UberEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B17C1D2A7E329900C3D30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2B17C1F2A7E329900C3D30A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A2B17C242A7E329900C3D30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2B17C272A7E329900C3D30A /* UberEats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UberEats.xcdatamodel; sourceTree = "<group>"; };
+		A2B17C292A7E329A00C3D30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2B17C2C2A7E329A00C3D30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2B17C2E2A7E329A00C3D30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B17C342A7E34E300C3D30A /* EmailContinuePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailContinuePage.swift; sourceTree = "<group>"; };
+		A2B17C362A7E34F300C3D30A /* continueWithApplePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = continueWithApplePage.swift; sourceTree = "<group>"; };
+		A2B17C382A7E351E00C3D30A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2B17C3A2A7E352800C3D30A /* logInPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInPage.swift; sourceTree = "<group>"; };
+		A2B17C3C2A7E371800C3D30A /* InformationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationPage.swift; sourceTree = "<group>"; };
+		A2B17C3E2A7E372400C3D30A /* EmailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailPage.swift; sourceTree = "<group>"; };
+		A2B17C402A7E373700C3D30A /* GooglePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePage.swift; sourceTree = "<group>"; };
+		A2B17C422A7E375600C3D30A /* accountCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = accountCollectionView.swift; sourceTree = "<group>"; };
+		A2B17C442A7E377100C3D30A /* ContinuePasscodePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinuePasscodePage.swift; sourceTree = "<group>"; };
+		A2B17C462A7E3BBB00C3D30A /* SelectPayMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPayMode.swift; sourceTree = "<group>"; };
+		A2B17C482A7E3BC000C3D30A /* CreditCardpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardpage.swift; sourceTree = "<group>"; };
+		A2B17C4A2A7E3BCB00C3D30A /* EditAccessPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccessPage.swift; sourceTree = "<group>"; };
+		A2B17C4C2A7E3BD300C3D30A /* ContinueWithFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueWithFacebook.swift; sourceTree = "<group>"; };
+		A2B17C4E2A7E3E9000C3D30A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2B17C172A7E329900C3D30A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5117E2327BB579B31E6386 /* Pods_UberEats.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13E83829C92811C644080FCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20BD7CD48B67DEF653FF604B /* Pods-UberEats.debug.xcconfig */,
+				14BEE301B911BF3772B132A5 /* Pods-UberEats.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A29797892A7FA52A005C6294 /* continue page */ = {
+			isa = PBXGroup;
+			children = (
+				A2B17C3C2A7E371800C3D30A /* InformationPage.swift */,
+				A2B17C3E2A7E372400C3D30A /* EmailPage.swift */,
+				A2B17C422A7E375600C3D30A /* accountCollectionView.swift */,
+				A2B17C442A7E377100C3D30A /* ContinuePasscodePage.swift */,
+				A2B17C402A7E373700C3D30A /* GooglePage.swift */,
+				A2B17C362A7E34F300C3D30A /* continueWithApplePage.swift */,
+			);
+			path = "continue page";
+			sourceTree = "<group>";
+		};
+		A297978A2A7FA5B8005C6294 /* card page */ = {
+			isa = PBXGroup;
+			children = (
+				A2B17C482A7E3BC000C3D30A /* CreditCardpage.swift */,
+				A2B17C462A7E3BBB00C3D30A /* SelectPayMode.swift */,
+			);
+			path = "card page";
+			sourceTree = "<group>";
+		};
+		A297978B2A7FA5D5005C6294 /* location page */ = {
+			isa = PBXGroup;
+			children = (
+				A29797862A7F9F47005C6294 /* ShareLocationPage.swift */,
+				A297977E2A7F7DEF005C6294 /* loactionPage.swift */,
+				A29797822A7F8643005C6294 /* addressPage.swift */,
+				A29797842A7F9071005C6294 /* allowPage.swift */,
+			);
+			path = "location page";
+			sourceTree = "<group>";
+		};
+		A297978C2A7FA692005C6294 /* log in page */ = {
+			isa = PBXGroup;
+			children = (
+				A2B17C3A2A7E352800C3D30A /* logInPage.swift */,
+				A2B17C382A7E351E00C3D30A /* ViewController.swift */,
+			);
+			path = "log in page";
+			sourceTree = "<group>";
+		};
+		A2B17C112A7E329900C3D30A = {
+			isa = PBXGroup;
+			children = (
+				A2B17C1C2A7E329900C3D30A /* UberEats */,
+				A2B17C1B2A7E329900C3D30A /* Products */,
+				13E83829C92811C644080FCC /* Pods */,
+				FDB5EAB098BD802F7E8C3297 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2B17C1B2A7E329900C3D30A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2B17C1A2A7E329900C3D30A /* UberEats.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2B17C1C2A7E329900C3D30A /* UberEats */ = {
+			isa = PBXGroup;
+			children = (
+				A2B17C1D2A7E329900C3D30A /* AppDelegate.swift */,
+				A2B17C1F2A7E329900C3D30A /* SceneDelegate.swift */,
+				A297978C2A7FA692005C6294 /* log in page */,
+				A297978A2A7FA5B8005C6294 /* card page */,
+				A2B17C4C2A7E3BD300C3D30A /* ContinueWithFacebook.swift */,
+				A2B17C4A2A7E3BCB00C3D30A /* EditAccessPage.swift */,
+				A29797892A7FA52A005C6294 /* continue page */,
+				A2B17C342A7E34E300C3D30A /* EmailContinuePage.swift */,
+				A2B17C232A7E329900C3D30A /* Main.storyboard */,
+				A297978B2A7FA5D5005C6294 /* location page */,
+				A2B17C292A7E329A00C3D30A /* Assets.xcassets */,
+				A2B17C2B2A7E329A00C3D30A /* LaunchScreen.storyboard */,
+				A2B17C4E2A7E3E9000C3D30A /* GoogleService-Info.plist */,
+				A2B17C2E2A7E329A00C3D30A /* Info.plist */,
+				A2B17C262A7E329900C3D30A /* UberEats.xcdatamodeld */,
+			);
+			path = UberEats;
+			sourceTree = "<group>";
+		};
+		FDB5EAB098BD802F7E8C3297 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41630AEDADCA9FE91892411C /* Pods_UberEats.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2B17C192A7E329900C3D30A /* UberEats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2B17C312A7E329A00C3D30A /* Build configuration list for PBXNativeTarget "UberEats" */;
+			buildPhases = (
+				7F5BD0DC24C3DCBB956BD3AF /* [CP] Check Pods Manifest.lock */,
+				A2B17C162A7E329900C3D30A /* Sources */,
+				A2B17C172A7E329900C3D30A /* Frameworks */,
+				A2B17C182A7E329900C3D30A /* Resources */,
+				DAE5663EA0EED9F005E7E4AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UberEats;
+			productName = UberEats;
+			productReference = A2B17C1A2A7E329900C3D30A /* UberEats.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2B17C122A7E329900C3D30A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A2B17C192A7E329900C3D30A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A2B17C152A7E329900C3D30A /* Build configuration list for PBXProject "UberEats" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2B17C112A7E329900C3D30A;
+			productRefGroup = A2B17C1B2A7E329900C3D30A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2B17C192A7E329900C3D30A /* UberEats */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2B17C182A7E329900C3D30A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B17C2D2A7E329A00C3D30A /* LaunchScreen.storyboard in Resources */,
+				A2B17C4F2A7E3E9000C3D30A /* GoogleService-Info.plist in Resources */,
+				A2B17C2A2A7E329A00C3D30A /* Assets.xcassets in Resources */,
+				A2B17C252A7E329900C3D30A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F5BD0DC24C3DCBB956BD3AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UberEats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE5663EA0EED9F005E7E4AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UberEats/Pods-UberEats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UberEats/Pods-UberEats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UberEats/Pods-UberEats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2B17C162A7E329900C3D30A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B17C4D2A7E3BD300C3D30A /* ContinueWithFacebook.swift in Sources */,
+				A2B17C392A7E351E00C3D30A /* ViewController.swift in Sources */,
+				A29797852A7F9071005C6294 /* allowPage.swift in Sources */,
+				A2B17C282A7E329900C3D30A /* UberEats.xcdatamodeld in Sources */,
+				A2B17C352A7E34E300C3D30A /* EmailContinuePage.swift in Sources */,
+				A2B17C472A7E3BBB00C3D30A /* SelectPayMode.swift in Sources */,
+				A2B17C3D2A7E371800C3D30A /* InformationPage.swift in Sources */,
+				A29797872A7F9F47005C6294 /* ShareLocationPage.swift in Sources */,
+				A2B17C1E2A7E329900C3D30A /* AppDelegate.swift in Sources */,
+				A2B17C4B2A7E3BCB00C3D30A /* EditAccessPage.swift in Sources */,
+				A2B17C372A7E34F300C3D30A /* continueWithApplePage.swift in Sources */,
+				A2B17C432A7E375600C3D30A /* accountCollectionView.swift in Sources */,
+				A297977F2A7F7DEF005C6294 /* loactionPage.swift in Sources */,
+				A2B17C3B2A7E352800C3D30A /* logInPage.swift in Sources */,
+				A2B17C3F2A7E372400C3D30A /* EmailPage.swift in Sources */,
+				A29797832A7F8643005C6294 /* addressPage.swift in Sources */,
+				A2B17C452A7E377100C3D30A /* ContinuePasscodePage.swift in Sources */,
+				A2B17C492A7E3BC000C3D30A /* CreditCardpage.swift in Sources */,
+				A2B17C202A7E329900C3D30A /* SceneDelegate.swift in Sources */,
+				A2B17C412A7E373700C3D30A /* GooglePage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2B17C232A7E329900C3D30A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2B17C242A7E329900C3D30A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2B17C2B2A7E329A00C3D30A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2B17C2C2A7E329A00C3D30A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2B17C2F2A7E329A00C3D30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2B17C302A7E329A00C3D30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2B17C322A7E329A00C3D30A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20BD7CD48B67DEF653FF604B /* Pods-UberEats.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UberEats/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-UberEats.UberEats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2B17C332A7E329A00C3D30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BEE301B911BF3772B132A5 /* Pods-UberEats.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UberEats/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-UberEats.UberEats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2B17C152A7E329900C3D30A /* Build configuration list for PBXProject "UberEats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B17C2F2A7E329A00C3D30A /* Debug */,
+				A2B17C302A7E329A00C3D30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2B17C312A7E329A00C3D30A /* Build configuration list for PBXNativeTarget "UberEats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B17C322A7E329A00C3D30A /* Debug */,
+				A2B17C332A7E329A00C3D30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2B17C262A7E329900C3D30A /* UberEats.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2B17C272A7E329900C3D30A /* UberEats.xcdatamodel */,
+			);
+			currentVersion = A2B17C272A7E329900C3D30A /* UberEats.xcdatamodel */;
+			path = UberEats.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A2B17C122A7E329900C3D30A /* Project object */;
+}
