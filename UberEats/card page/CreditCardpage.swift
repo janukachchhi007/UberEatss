@@ -22,17 +22,21 @@ class CreditCardpage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardNumberTextField.layer.borderColor = UIColor.black.cgColor
-        cardNumberTextField.layer.borderWidth = 2
+        
         ref = Database.database().reference()
         reference = Firestore.firestore()
+        
+        cardNumberTextField.layer.borderColor = UIColor.black.cgColor
+        cardNumberTextField.layer.borderWidth = 2
+        
         cvvNumberTextField.attributedPlaceholder = NSAttributedString(
             string: "123",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
         )
     }
     
-    @IBAction func buttonAction(_ sender: Any) {
+    @IBAction func buttonAction(_ sender: Any)
+    {
         if cvvNumberTextField.text?.count ?? 0 != 10
         {
             addData()
@@ -40,17 +44,25 @@ class CreditCardpage: UIViewController {
         else{
             
         }
+        navigation()
     }
+    
     func navigation()
     {
         let navigation = storyboard?.instantiateViewController(identifier:"loactionPage") as! loactionPage
         navigationController?.pushViewController(navigation, animated: true)
     }
+    
+    //MARK = FIRESTORE
+    
     func addData()
     {
         reference.collection("User").addDocument(data: ["Card Number":cardNumberTextField.text!,"Cvv":cvvNumberTextField.text!])
     }
+    
 }
+ //MARK = PICKERVIEW
+
 extension CreditCardpage: UIPickerViewDelegate,UIPickerViewDataSource
 {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -60,6 +72,7 @@ extension CreditCardpage: UIPickerViewDelegate,UIPickerViewDataSource
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 1
     }
+    
     
     
 }

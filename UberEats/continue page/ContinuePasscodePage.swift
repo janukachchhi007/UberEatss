@@ -25,6 +25,9 @@ class ContinuePasscodePage: UIViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
         reference = Firestore.firestore()
+        backButton.layer.cornerRadius = 20
+        backButton.layer.masksToBounds = true
+        
         firstNametextField.attributedPlaceholder = NSAttributedString(
             string: "Enter first name",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
@@ -55,6 +58,9 @@ class ContinuePasscodePage: UIViewController {
         backButton.layer.cornerRadius = 30
         nextButton.layer.cornerRadius = 25
     }
+    
+    //MARK = FIRESTORE
+    
     func addData()
     {
         reference.collection("Information").addDocument(data: ["first Name":firstNametextField.text!,"Last Name":lastNametextField.text!,"Mobile Number":mobileNumbertextField.text!])

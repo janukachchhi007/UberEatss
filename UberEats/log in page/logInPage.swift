@@ -14,10 +14,10 @@ import FirebaseFirestore
 import FirebaseAuth
 
 class logInPage: UIViewController {
+    
     var ref: DatabaseReference!
     var reference : Firestore!
     
-
     @IBOutlet weak var countryDropDown: DropDown!
     @IBOutlet weak var numberTextField: UITextField!
     @IBOutlet weak var continueButton: UIButton!
@@ -29,25 +29,29 @@ class logInPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         ref = Database.database().reference()
         reference = Firestore.firestore()
-        countryDropDown.optionArray = ["American-Samoa","Aruba","Bahrain","bahrain","Cambodia","Canada","Djibouti","Dominica","Ecuador","Egypt","Fiji","France","Gambia","Georgia","Honduras","Hong-Kong","India","Iran","Japan","Jordan","Kenya","Kosovo",]
         
+        countryDropDown.optionArray = ["American-Samoa","Aruba","Bahrain","bahrain","Cambodia","Canada","Djibouti","Dominica","Ecuador","Egypt","Fiji","France","Gambia","Georgia","Honduras","Hong-Kong","India","Iran","Japan","Jordan","Kenya","Kosovo",]
         setProperty()
     }
-            
-    @IBAction func continueButtonAction(_ sender: Any) {
-        
+    
+    @IBAction func continueButtonAction(_ sender: Any)
+    {
         numberData()
         let navigation = storyboard?.instantiateViewController(identifier:"InformationPage") as! InformationPage
         navigationController?.pushViewController(navigation, animated: true)
     }
-
-    @IBAction func backButtonAction(_ sender: Any) {
+    
+    @IBAction func backButtonAction(_ sender: Any)
+    {
         navigationController?.popViewController(animated: true)
     }
     
     @IBAction func continueWithfacebookButtonAction(_ sender: Any) {
+        let navigation = storyboard?.instantiateViewController(identifier:"ContinueWithFacebook") as! ContinueWithFacebook
+        navigationController?.pushViewController(navigation, animated: true)
         facebookShowalert()
     }
     
@@ -61,7 +65,6 @@ class logInPage: UIViewController {
     @IBAction func continueWithEmailButtonAction(_ sender: Any) {
         let navigation = storyboard?.instantiateViewController(identifier:"EmailPage") as! EmailPage
         navigationController?.pushViewController(navigation, animated: true)
-        
     }
     
     @IBAction func continueAppleButtonAction(_ sender: Any) {
@@ -115,7 +118,6 @@ class logInPage: UIViewController {
     func addData()
     {
         reference.collection("Phone Number Data").document(numberTextField.text!).setData(["Number":numberTextField.text])
-        
     }
     
     // MARK = Property Set Function

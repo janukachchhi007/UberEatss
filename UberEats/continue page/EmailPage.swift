@@ -13,10 +13,9 @@ import FirebaseAuth
 
 
 class EmailPage: UIViewController {
+    
     var ref: DatabaseReference!
     var reference : Firestore!
-    //    let actionCodeSettings = ActionCodeSettings()
-    
     
     @IBOutlet weak var passwordTextFildd: UITextField!
     @IBOutlet weak var emailTextFild: UITextField!
@@ -24,6 +23,7 @@ class EmailPage: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         ref = Database.database().reference()
         reference = Firestore.firestore()
         
@@ -33,13 +33,14 @@ class EmailPage: UIViewController {
         nextButton.layer.masksToBounds = true
     }
     
-    @IBAction func backButtonAction(_ sender: Any) {
+    @IBAction func backButtonAction(_ sender: Any)
+    {
         navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func nextButtonAction(_ sender: Any) {
+    @IBAction func nextButtonAction(_ sender: Any)
+    {
         numberData()
-        
         let navigation = storyboard?.instantiateViewController(identifier:"ContinuePasscodePage") as! ContinuePasscodePage
         navigationController?.pushViewController(navigation, animated: true)
     }
@@ -55,6 +56,7 @@ class EmailPage: UIViewController {
         }
         
     }
+    
     func showAlert(id:String)
     {
         let alert = UIAlertController(title: "OTP", message: "Enter Your OTP", preferredStyle: .alert)
@@ -64,6 +66,7 @@ class EmailPage: UIViewController {
         }))
         present(alert, animated: true)
     }
+    
     func veriyOtp(token:String,otp:String)
     {
         let credential = PhoneAuthProvider.provider().credential(withVerificationID: token, verificationCode: otp)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C5117E2327BB579B31E6386 /* Pods_UberEats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41630AEDADCA9FE91892411C /* Pods_UberEats.framework */; };
+		A266AF022A8378EA008AD05B /* ContinueWithFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266AF012A8378EA008AD05B /* ContinueWithFacebook.swift */; };
 		A297977F2A7F7DEF005C6294 /* loactionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A297977E2A7F7DEF005C6294 /* loactionPage.swift */; };
 		A29797832A7F8643005C6294 /* addressPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29797822A7F8643005C6294 /* addressPage.swift */; };
 		A29797852A7F9071005C6294 /* allowPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29797842A7F9071005C6294 /* allowPage.swift */; };
@@ -18,7 +19,6 @@
 		A2B17C282A7E329900C3D30A /* UberEats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C262A7E329900C3D30A /* UberEats.xcdatamodeld */; };
 		A2B17C2A2A7E329A00C3D30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B17C292A7E329A00C3D30A /* Assets.xcassets */; };
 		A2B17C2D2A7E329A00C3D30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B17C2B2A7E329A00C3D30A /* LaunchScreen.storyboard */; };
-		A2B17C352A7E34E300C3D30A /* EmailContinuePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C342A7E34E300C3D30A /* EmailContinuePage.swift */; };
 		A2B17C372A7E34F300C3D30A /* continueWithApplePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C362A7E34F300C3D30A /* continueWithApplePage.swift */; };
 		A2B17C392A7E351E00C3D30A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C382A7E351E00C3D30A /* ViewController.swift */; };
 		A2B17C3B2A7E352800C3D30A /* logInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C3A2A7E352800C3D30A /* logInPage.swift */; };
@@ -29,8 +29,6 @@
 		A2B17C452A7E377100C3D30A /* ContinuePasscodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C442A7E377100C3D30A /* ContinuePasscodePage.swift */; };
 		A2B17C472A7E3BBB00C3D30A /* SelectPayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C462A7E3BBB00C3D30A /* SelectPayMode.swift */; };
 		A2B17C492A7E3BC000C3D30A /* CreditCardpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C482A7E3BC000C3D30A /* CreditCardpage.swift */; };
-		A2B17C4B2A7E3BCB00C3D30A /* EditAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C4A2A7E3BCB00C3D30A /* EditAccessPage.swift */; };
-		A2B17C4D2A7E3BD300C3D30A /* ContinueWithFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B17C4C2A7E3BD300C3D30A /* ContinueWithFacebook.swift */; };
 		A2B17C4F2A7E3E9000C3D30A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B17C4E2A7E3E9000C3D30A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +36,7 @@
 		14BEE301B911BF3772B132A5 /* Pods-UberEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.release.xcconfig"; path = "Target Support Files/Pods-UberEats/Pods-UberEats.release.xcconfig"; sourceTree = "<group>"; };
 		20BD7CD48B67DEF653FF604B /* Pods-UberEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.debug.xcconfig"; path = "Target Support Files/Pods-UberEats/Pods-UberEats.debug.xcconfig"; sourceTree = "<group>"; };
 		41630AEDADCA9FE91892411C /* Pods_UberEats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberEats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A266AF012A8378EA008AD05B /* ContinueWithFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueWithFacebook.swift; sourceTree = "<group>"; };
 		A297977E2A7F7DEF005C6294 /* loactionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loactionPage.swift; sourceTree = "<group>"; };
 		A29797822A7F8643005C6294 /* addressPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressPage.swift; sourceTree = "<group>"; };
 		A29797842A7F9071005C6294 /* allowPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allowPage.swift; sourceTree = "<group>"; };
@@ -50,7 +49,6 @@
 		A2B17C292A7E329A00C3D30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2B17C2C2A7E329A00C3D30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2B17C2E2A7E329A00C3D30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2B17C342A7E34E300C3D30A /* EmailContinuePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailContinuePage.swift; sourceTree = "<group>"; };
 		A2B17C362A7E34F300C3D30A /* continueWithApplePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = continueWithApplePage.swift; sourceTree = "<group>"; };
 		A2B17C382A7E351E00C3D30A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2B17C3A2A7E352800C3D30A /* logInPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logInPage.swift; sourceTree = "<group>"; };
@@ -61,8 +59,6 @@
 		A2B17C442A7E377100C3D30A /* ContinuePasscodePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinuePasscodePage.swift; sourceTree = "<group>"; };
 		A2B17C462A7E3BBB00C3D30A /* SelectPayMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPayMode.swift; sourceTree = "<group>"; };
 		A2B17C482A7E3BC000C3D30A /* CreditCardpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardpage.swift; sourceTree = "<group>"; };
-		A2B17C4A2A7E3BCB00C3D30A /* EditAccessPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccessPage.swift; sourceTree = "<group>"; };
-		A2B17C4C2A7E3BD300C3D30A /* ContinueWithFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueWithFacebook.swift; sourceTree = "<group>"; };
 		A2B17C4E2A7E3E9000C3D30A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +86,7 @@
 		A29797892A7FA52A005C6294 /* continue page */ = {
 			isa = PBXGroup;
 			children = (
+				A266AF012A8378EA008AD05B /* ContinueWithFacebook.swift */,
 				A2B17C3C2A7E371800C3D30A /* InformationPage.swift */,
 				A2B17C3E2A7E372400C3D30A /* EmailPage.swift */,
 				A2B17C422A7E375600C3D30A /* accountCollectionView.swift */,
@@ -153,13 +150,10 @@
 				A2B17C1D2A7E329900C3D30A /* AppDelegate.swift */,
 				A2B17C1F2A7E329900C3D30A /* SceneDelegate.swift */,
 				A297978C2A7FA692005C6294 /* log in page */,
-				A297978A2A7FA5B8005C6294 /* card page */,
-				A2B17C4C2A7E3BD300C3D30A /* ContinueWithFacebook.swift */,
-				A2B17C4A2A7E3BCB00C3D30A /* EditAccessPage.swift */,
 				A29797892A7FA52A005C6294 /* continue page */,
-				A2B17C342A7E34E300C3D30A /* EmailContinuePage.swift */,
-				A2B17C232A7E329900C3D30A /* Main.storyboard */,
+				A297978A2A7FA5B8005C6294 /* card page */,
 				A297978B2A7FA5D5005C6294 /* location page */,
+				A2B17C232A7E329900C3D30A /* Main.storyboard */,
 				A2B17C292A7E329A00C3D30A /* Assets.xcassets */,
 				A2B17C2B2A7E329A00C3D30A /* LaunchScreen.storyboard */,
 				A2B17C4E2A7E3E9000C3D30A /* GoogleService-Info.plist */,
@@ -293,16 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2B17C4D2A7E3BD300C3D30A /* ContinueWithFacebook.swift in Sources */,
 				A2B17C392A7E351E00C3D30A /* ViewController.swift in Sources */,
 				A29797852A7F9071005C6294 /* allowPage.swift in Sources */,
 				A2B17C282A7E329900C3D30A /* UberEats.xcdatamodeld in Sources */,
-				A2B17C352A7E34E300C3D30A /* EmailContinuePage.swift in Sources */,
 				A2B17C472A7E3BBB00C3D30A /* SelectPayMode.swift in Sources */,
 				A2B17C3D2A7E371800C3D30A /* InformationPage.swift in Sources */,
 				A29797872A7F9F47005C6294 /* ShareLocationPage.swift in Sources */,
 				A2B17C1E2A7E329900C3D30A /* AppDelegate.swift in Sources */,
-				A2B17C4B2A7E3BCB00C3D30A /* EditAccessPage.swift in Sources */,
 				A2B17C372A7E34F300C3D30A /* continueWithApplePage.swift in Sources */,
 				A2B17C432A7E375600C3D30A /* accountCollectionView.swift in Sources */,
 				A297977F2A7F7DEF005C6294 /* loactionPage.swift in Sources */,
@@ -310,6 +301,7 @@
 				A2B17C3F2A7E372400C3D30A /* EmailPage.swift in Sources */,
 				A29797832A7F8643005C6294 /* addressPage.swift in Sources */,
 				A2B17C452A7E377100C3D30A /* ContinuePasscodePage.swift in Sources */,
+				A266AF022A8378EA008AD05B /* ContinueWithFacebook.swift in Sources */,
 				A2B17C492A7E3BC000C3D30A /* CreditCardpage.swift in Sources */,
 				A2B17C202A7E329900C3D30A /* SceneDelegate.swift in Sources */,
 				A2B17C412A7E373700C3D30A /* GooglePage.swift in Sources */,

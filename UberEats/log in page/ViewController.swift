@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var continueButton: UIButton!
     override func viewDidLoad() {
@@ -16,11 +16,9 @@ class ViewController: UIViewController {
         continueButton.layer.cornerRadius = 20
         continueButton.layer.masksToBounds =  true
     }
-
+    
     @IBAction func continueButtonAction(_ sender: Any) {
         let naviget = storyboard?.instantiateViewController(identifier: "logInPage") as! logInPage
-        
-        
         navigationController?.pushViewController(naviget, animated: true)
     }
 }

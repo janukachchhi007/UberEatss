@@ -9,10 +9,8 @@ import UIKit
 
 class SelectPayMode: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func creditButtonAction(_ sender: UIButton) {
@@ -21,6 +19,7 @@ class SelectPayMode: UIViewController {
     }
     
     @IBAction func doThislaterButtonAction(_ sender: UIButton) {
-        
+        let navigation = storyboard?.instantiateViewController(identifier:"loactionPage") as! loactionPage
+        navigationController?.pushViewController(navigation, animated: true)
     }
 }
