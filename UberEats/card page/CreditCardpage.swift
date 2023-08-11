@@ -35,7 +35,7 @@ class CreditCardpage: UIViewController {
         )
     }
     
-    @IBAction func buttonAction(_ sender: Any)
+    @IBAction func nextButtonAction(_ sender: Any)
     {
         if cvvNumberTextField.text?.count ?? 0 != 10
         {

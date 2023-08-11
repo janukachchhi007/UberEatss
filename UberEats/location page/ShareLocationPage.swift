@@ -8,7 +8,7 @@
 import UIKit
 
 class ShareLocationPage: UIViewController {
-
+    
     @IBOutlet weak var notificationButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()

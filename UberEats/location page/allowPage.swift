@@ -19,11 +19,12 @@ class allowPage: UIViewController {
     
     @IBAction func allowButtonAction(_ sender: Any) {
         navigationController?.popViewController(animated:true)
-
+      
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
         navigationController?.popViewController(animated:true)
-
+ 
     }
 }
+

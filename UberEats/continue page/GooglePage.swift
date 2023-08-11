@@ -19,8 +19,10 @@ class GooglePage: UIViewController {
     @IBOutlet weak var popView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         popView.layer.cornerRadius = 20
         popView.layer.masksToBounds = true
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
